@@ -26,6 +26,5 @@ options:
   --interface INTERFACE
                         Choose your interface for attack
   --mac EVILMAC         Specify your MAC Address
-
 ```
 
