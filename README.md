@@ -51,4 +51,7 @@ sudo iptables -t nat -A POSTROUTING -o ethX -j MASQUERADE
 sudo modprobe nf_conntrack
 echo "1" > /proc/sys/net/netfilter/nf_conntrack_helper
 ```
+3. Attack
+```
+sudo python3 Betrayal.py --interface ethX --mac XX:XX:XX:XX:XX:XX --gateway <GW IP>
 ```
