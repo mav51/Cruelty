@@ -30,7 +30,7 @@ options:
 
 ## Mechanics
 It is a modification of ARP spoofing. The script will shout at the entire channel segment that your computer is the default gateway by sending Gratuitous ARP messages.
-Gratuitous ARP is a special ARP frame that sends out an announcement that a new binding of MAC address and IP address has occurred. This can be used by an attacker to conduct an MTIM attack, run a script against the router's IP address.
+Gratuitous ARP is a special ARP frame that sends out an announcement that a new binding of MAC address and IP address has occurred. This can be used by an attacker to conduct an MITM attack, run a script against the router's IP address.
 
 The scanner waits for the following arguments as input:
   - network interface (--interface)
