@@ -44,3 +44,11 @@ The scanner waits for the following arguments as input:
 git clone https://github.com/in9uz/Betrayal
 sudo pip3 install -r requirements.txt
 ```
+2. Enable Forwarding, SNAT, NAT Helper 
+```
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo iptables -t nat -A POSTROUTING -o ethX -j MASQUERADE
+sudo modprobe nf_conntrack
+echo "1" > /proc/sys/net/netfilter/nf_conntrack_helper
+```
+```
