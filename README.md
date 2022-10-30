@@ -55,3 +55,7 @@ echo "1" > /proc/sys/net/netfilter/nf_conntrack_helper
 ```
 sudo python3 Betrayal.py --interface ethX --mac XX:XX:XX:XX:XX:XX --gateway <GW IP>
 ```
+## Limitations
+This attack is very noisy.
+The tool does not restore the structure of ARP tables by itself. After the attack stops, the gateway's MAC address on the clients will change only after 5 minutes. Understand how ARP works.
+GARP frames are sent every 800 ms. You can edit the script code and change the delay before sending the next frame, but be careful. There is a chance to strigger the Storm-Control system.
