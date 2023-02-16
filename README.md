@@ -1,8 +1,8 @@
-# Betrayal
+# Cruelty
 Gratuitous ARP Injector
 
 ```
-python3 Betrayal.py --help                                                                                                                      2 
+python3 Cruelty.py --help                                                                                                                      2 
 
  ▄▄▄▄   ▓█████▄▄▄█████▓ ██▀███   ▄▄▄     ▓██   ██▓ ▄▄▄       ██▓    
 ▓█████▄ ▓█   ▀▓  ██▒ ▓▒▓██ ▒ ██▒▒████▄    ▒██  ██▒▒████▄    ▓██▒    
@@ -16,9 +16,9 @@ python3 Betrayal.py --help                                                      
       ░                                   ░ ░                                                                                                             
     
 Gratuitous ARP Injector
-Author: Magama Bazarov, @in9uz, <in9uz@protonmail.com>
+Author: Caster, @c4s73r, <c4s73r@protonmail.com>
 
-usage: Betrayal.py [-h] --gateway GATEWAY --interface INTERFACE --mac EVILMAC
+usage: Cruelty.py [-h] --gateway GATEWAY --interface INTERFACE --mac EVILMAC
 
 options:
   -h, --help            show this help message and exit
@@ -41,7 +41,7 @@ The scanner waits for the following arguments as input:
 
 1. Install dependencies
 ```
-git clone https://github.com/in9uz/Betrayal
+git clone https://github.com/c4s73r/Cruelty
 sudo pip3 install -r requirements.txt
 ```
 2. Enable Forwarding, MASQUERADE, NAT Helper 
@@ -53,7 +53,7 @@ echo "1" > /proc/sys/net/netfilter/nf_conntrack_helper
 ```
 3. Attack
 ```
-sudo python3 Betrayal.py --interface ethX --mac XX:XX:XX:XX:XX:XX --gateway <GW IP>
+sudo python3 Cruelty.py --interface ethX --mac XX:XX:XX:XX:XX:XX --gateway <GW IP>
 ```
 ## Limitations
 This attack is very noisy.
