@@ -1,20 +1,7 @@
 #!/usr/bin/env python3
 
-print (r"""
- ▄▄▄▄   ▓█████▄▄▄█████▓ ██▀███   ▄▄▄     ▓██   ██▓ ▄▄▄       ██▓    
-▓█████▄ ▓█   ▀▓  ██▒ ▓▒▓██ ▒ ██▒▒████▄    ▒██  ██▒▒████▄    ▓██▒    
-▒██▒ ▄██▒███  ▒ ▓██░ ▒░▓██ ░▄█ ▒▒██  ▀█▄   ▒██ ██░▒██  ▀█▄  ▒██░    
-▒██░█▀  ▒▓█  ▄░ ▓██▓ ░ ▒██▀▀█▄  ░██▄▄▄▄██  ░ ▐██▓░░██▄▄▄▄██ ▒██░    
-░▓█  ▀█▓░▒████▒ ▒██▒ ░ ░██▓ ▒██▒ ▓█   ▓██▒ ░ ██▒▓░ ▓█   ▓██▒░██████▒
-░▒▓███▀▒░░ ▒░ ░ ▒ ░░   ░ ▒▓ ░▒▓░ ▒▒   ▓▒█░  ██▒▒▒  ▒▒   ▓▒█░░ ▒░▓  ░
-▒░▒   ░  ░ ░  ░   ░      ░▒ ░ ▒░  ▒   ▒▒ ░▓██ ░▒░   ▒   ▒▒ ░░ ░ ▒  ░
- ░    ░    ░    ░        ░░   ░   ░   ▒   ▒ ▒ ░░    ░   ▒     ░ ░   
- ░         ░  ░           ░           ░  ░░ ░           ░  ░    ░  ░
-      ░                                   ░ ░                                                                                                             
-    """)
-
 print ("Gratuitous ARP Injector")
-print("Author: Magama Bazarov, @in9uz, <in9uz@protonmail.com>\n")
+print("Author: Caster, @c4s73r, <c4s73r@protonmail.com>\n")
 
 from scapy.all import *
 from scapy.layers.l2 import *
@@ -56,11 +43,3 @@ def exploit(gateway, interface, evilmac):
 
 switch_to_promisc(args.interface)
 exploit(args.interface, args.evilmac, args.gateway)
-
-
-
-    
-
-
-
-
